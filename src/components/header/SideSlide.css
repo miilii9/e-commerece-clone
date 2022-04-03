@@ -1,0 +1,27 @@
+.sideSlid {
+    margin-right: 20px;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.flexdis{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* align-content: flex-start; */
+    justify-content: space-evenly;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+.flexdis div:last-child{
+    margin-right: 10px;
+}
+.flexdis div p {
+    text-align: right;
+}
+.grey-s {
+    color: gray;
+    font-size: small;
+}

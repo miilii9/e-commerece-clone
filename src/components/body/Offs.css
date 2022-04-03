@@ -1,0 +1,21 @@
+.whol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+.two-pro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.two-pro img{
+    height: 328px;
+    width: 569px;
+}
+.whol:nth-child(2) img{
+height: 675px;
+width: 570px;
+}
