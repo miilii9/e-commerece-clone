@@ -1,104 +1,63 @@
-import './Slider.css'
-import img1 from '../../assets/Export/Slideshow/blending-change_0.jpg'
-import img2 from '../../assets/Export/Slideshow/blending-change2.jpg'
-import img3 from '../../assets/Export/Slideshow/blending-change9_0.jpg'
-import img4 from '../../assets/Export/Slideshow/blending-change22.jpg'
-import {React } from 'react'
-import 'react-slideshow-image/dist/styles.css';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
+import './Slider.css';
+import img1 from '../../assets/Export/Slideshow/blending-change_0.jpg';
+import img2 from '../../assets/Export/Slideshow/blending-change2.jpg';
+import img3 from '../../assets/Export/Slideshow/blending-change9_0.jpg';
+import img4 from '../../assets/Export/Slideshow/blending-change22.jpg';
+import SimpleImageSlider from 'react-simple-image-slider';
+import { React, useEffect, useRef, useState } from 'react';
 
 export default function Slider() {
-  // const { sOne, setSOne } = useState('');
-  // const { sTwo, setSTwo } = useState('');
-  // const { sThree, setSThree } = useState('');
-  // const { sFour, setSFour } = useState('');
-  // const { sld, setSld } = useState('');
-  // const imgs = [img1, img2, img3, img4];
-  const slideImages = [
-  {
-    url: img1,
-    caption: 'Slide 1'
-  },
-  {
-    url: img2,
-    caption: 'Slide 2'
-  },
-  {
-    url: img3,
-    caption: 'Slide 3'
+  const images = [
+    {
+      url: img1,
+      caption: 'عید تا عید',
     },
-  {
-    url: img4,
-    caption: 'Slide 4'
-  }
-];
-  // let i =0
-  // setInterval((
-  //   () => {
-  //     if (i >= 5) {
-  //       i = 0;
-  //     }
-  //     setSld(imgs[i])
-  //     i++
-  //     }
-  //   ) , 2000)
+    {
+      url: img2,
+      caption: 'اسبری تقویت کننده مو',
+    },
+    {
+      url: img3,
+      caption: 'محصولات صحت',
+    },
+    {
+      url: img4,
+      caption: 'محصولات ببک',
+    },
+  ];
+
+  let startCaption = images[0].caption;
+  let [caption, setCaption] = useState(startCaption);
+
+  const onChange = (id) => {
+    setCaption(images[id - 1].caption);
+  };
+
+  const className = (image) =>
+    image.caption === caption ? 'caption currentCaption' : 'caption';
+
   return (
-      <div >
-      
-     <Slide easing="ease" className='sldsss'>
-          <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[0].url})`}}>
-              <div className='navs'>
-          <ul>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-          </ul>
-        </div>
-            </div>
-          </div>
-          <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[1].url})`}}>
-              <div className='navs'>
-          <ul>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-          </ul>
-        </div>
-            </div>
-          </div>
-          <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[2].url})`}}>
-              <div className='navs'>
-          <ul>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-          </ul>
-        </div>
-            </div>
-        </div>
-        <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[3].url})`}}>
-              <div className='navs'>
-          <ul>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-            <li><a href='google.com'>ارایشی</a></li>
-          </ul>
-        </div>
-            </div>
-        </div>
-        
-        </Slide>
-      
-          
+    <div className="slider">
+      <SimpleImageSlider
+        width={790}
+        height={360}
+        images={images}
+        showBullets={false}
+        showNavs={true}
+        onStartSlide={onChange}
+        slideDuration={0.5}
+        autoPlay={true}
+        autoPlayDelay={7}
+      />
+      <div className="slider-caption">
+        {images.map((image) => {
+          return (
+            <p className={className(image)} key={image.url}>
+              {image.caption}
+            </p>
+          );
+        })}
+      </div>
     </div>
-  )
+  );
 }

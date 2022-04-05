@@ -44,7 +44,7 @@
 .line:after {
   content: '';
   position: absolute;
-  border-top: 2.5px solid #fff;
+  border-top: 2.2px solid #fff;
   width: 75px;
   transform: rotate(125deg);
   transform-origin: 20% 10%;
