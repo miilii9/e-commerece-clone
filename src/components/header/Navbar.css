@@ -70,6 +70,7 @@ form {
   position: relative;
   overflow: hidden;
   z-index: 50;
+  font-family: 'Vazirmatn', sans-serif;
 }
 .search input {
   font-family: 'Vazirmatn', sans-serif;
@@ -88,7 +89,6 @@ form select {
   padding: 0.3rem 0.75rem;
   border: none;
   border-left: solid 1px gray;
-  font-family: 'Vazirmatn', sans-serif;
   background-color: #fff;
   width: 30%;
   align-self: right;

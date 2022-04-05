@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -36,17 +47,22 @@
     transform: rotate(360deg);
   }
 }
-.slidss{
+.slidss {
   display: flex;
   justify-content: unset;
   flex-direction: row-reverse;
-  align-items:start;
-  width:80% ;
+  align-items: start;
+  width: 80%;
   margin: 30px auto;
 }
-.products{
+.products {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+}
+
+button {
+  background-color: inherit;
+  border: none;
 }
