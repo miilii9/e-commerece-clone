@@ -9,6 +9,9 @@ import Countdwn from './components/header/Countdwn';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
+// body
+import Online from './components/body/Online';
+import Items from './components/body/products/Items';
 // imgs
 import cosmetics from './assets/Export/Catagories/cosmetics.png';
 import lipstick from './assets/Export/Catagories/lipstick.png';
@@ -58,6 +61,8 @@ function App() {
           <Countdwn />
         </div>
       </header>
+      <Items />
+      {/* <Online /> */}
     </div>
   );
 }

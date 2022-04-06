@@ -1,0 +1,29 @@
+.slider {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.slider-caption {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-weight: 900;
+    background-color: grey;
+    opacity: 0.5;
+    border-top: 2px solid #777;
+}
+
+.caption {
+    padding: 1rem 0;
+    border-left: 2px solid #777;
+    width: 25%;
+}
+
+.currentCaption {
+    color: #000;
+}

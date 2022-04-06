@@ -1,0 +1,11 @@
+.dis-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.dis-flex-column img {
+    display: none;
+    max-width: 100%;
+}
