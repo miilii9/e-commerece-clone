@@ -59,8 +59,9 @@
 .products {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
 }
 
 button {
