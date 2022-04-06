@@ -3,6 +3,7 @@ import React from 'react';
 import SimpleImageSlider from 'react-simple-image-slider';
 import './MidSlider.css';
 import { useState } from 'react';
+
 // imgs
 import img1 from '../../../assets/Images/product37_large.jpg';
 import img2 from '../../../assets/Images/dafi-micellar-water-oil-control-200ml-149270041902.jpg';
@@ -32,8 +33,8 @@ export default function () {
   return (
     <div className="slider">
       <SimpleImageSlider
-        width={300}
-        height={400}
+        width={500}
+        height={450}
         images={images}
         showBullets={false}
         showNavs={true}
@@ -42,16 +43,6 @@ export default function () {
         autoPlay={true}
         autoPlayDelay={7}
       />
-      <div className="slider-caption">
-        {images.map((image) => {
-          return (
-            <p className={className(image)} key={image.url}>
-              {image.caption}
-              <img src={image.url} alt="alt" />
-            </p>
-          );
-        })}
-      </div>
     </div>
   );
 }

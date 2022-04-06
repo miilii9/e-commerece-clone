@@ -1,11 +1,40 @@
-.dis-flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
+.pics {
+  margin: auto;
+  width: 80%;
+  height: 90vh;
+  position: relative;
+  display: flex;
 }
-.dis-flex-column img {
-    display: none;
-    max-width: 100%;
+
+.pic {
+  /* height: 44vh; */
+  position: absolute;
+}
+
+.pic img {
+  height: auto;
+  width: 20vw;
+  object-fit: cover;
+  border-radius: 1rem;
+  aspect-ratio: 4/3;
+}
+
+.pic:nth-child(0) {
+  top: 0;
+  left: 0;
+}
+
+.pic:nth-child(1) {
+  top: 0;
+  right: 0;
+}
+
+.pic:nth-child(2) {
+  bottom: 0;
+  left: 0;
+}
+
+.pic:nth-child(3) {
+  bottom: 0;
+  right: 0;
 }
