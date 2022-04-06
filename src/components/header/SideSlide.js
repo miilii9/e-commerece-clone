@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './SideSlide.css';
 
 export default function sideSlide() {
@@ -6,9 +7,12 @@ export default function sideSlide() {
     <div>
       <div className="sideSlid">
         <div className="flexdis">
-          <div>
-            <p>icon</p>
-          </div>
+          <FontAwesomeIcon
+            className="icon"
+            icon="fa-solid fa-headset"
+            fixedWidth
+            size="2x"
+          />
           <div>
             <p className="bold-m">مشاوره تخصصی 78371-021</p>
             <p className="grey-s">
@@ -17,9 +21,12 @@ export default function sideSlide() {
           </div>
         </div>
         <div className="flexdis">
-          <div>
-            <p>icon</p>
-          </div>
+          <FontAwesomeIcon
+            className="icon"
+            icon="fa-solid fa-truck-fast"
+            fixedWidth
+            size="2x"
+          />
           <div>
             <p className="bold-m">ارسال سریع به سراسر ایران</p>
             <p className="grey-s">
@@ -28,18 +35,24 @@ export default function sideSlide() {
           </div>
         </div>
         <div className="flexdis">
-          <div>
-            <p>icon</p>
-          </div>
+          <FontAwesomeIcon
+            className="icon"
+            icon="fa-solid fa-certificate"
+            fixedWidth
+            size="2x"
+          />
           <div>
             <p className="bold-m">تضمین اصالت کالا</p>
             <p className="grey-s">تضمین استفاده از برند های معتبر و مختلف </p>
           </div>
         </div>
         <div className="flexdis">
-          <div>
-            <p>icon</p>
-          </div>
+          <FontAwesomeIcon
+            className="icon"
+            icon="fa-solid fa-calendar-check"
+            fixedWidth
+            size="2x"
+          />
           <div>
             <p className="bold-m">فرضت 7 روزه بازگشت کالا</p>
             <p className="grey-s">

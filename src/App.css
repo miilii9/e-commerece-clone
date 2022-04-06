@@ -49,11 +49,12 @@
 }
 .slidss {
   display: flex;
-  justify-content: unset;
   flex-direction: row-reverse;
   align-items: start;
   width: 80%;
   margin: 30px auto;
+  height: auto;
+  position: relative;
 }
 .products {
   display: flex;

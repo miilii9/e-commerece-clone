@@ -76,11 +76,33 @@ export default function Catagory() {
         </div>
 
         <div className="icons">
-          <i>ic</i>
+          <FontAwesomeIcon
+            className="icon"
+            icon={['fab', 'instagram']}
+            fixedWidth
+            size="1x"
+          />
 
-          <i>ic</i>
+          <FontAwesomeIcon
+            className="icon"
+            icon={['fab', 'telegram']}
+            fixedWidth
+            size="1x"
+          />
 
-          <i>ic</i>
+          <FontAwesomeIcon
+            className="icon"
+            icon={['fab', 'twitter']}
+            fixedWidth
+            size="1x"
+          />
+
+          <FontAwesomeIcon
+            className="icon"
+            icon={['fab', 'youtube']}
+            fixedWidth
+            size="1x"
+          />
         </div>
       </div>
     </div>

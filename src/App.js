@@ -17,8 +17,24 @@ import makeup from './assets/Export/Catagories/makeup.png';
 import mascara from './assets/Export/Catagories/mascara.png';
 import powder from './assets/Export/Catagories/powder.png';
 import Products from './components/header/Products';
+import {
+  faFacebook,
+  faGooglePlus,
+  faInstagram,
+  faTelegram,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
-library.add(fas);
+library.add(
+  fas,
+  faTwitter,
+  faFacebook,
+  faGooglePlus,
+  faTelegram,
+  faInstagram,
+  faYoutube
+);
 
 function App() {
   return (
