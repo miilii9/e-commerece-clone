@@ -1,3 +1,38 @@
-.hour {
-  color: red;
+.timer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+.timer > div {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.dot {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.number {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  background-color: #343434;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 5px;
+  margin: 1rem;
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 0.9rem;
 }

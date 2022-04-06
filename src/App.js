@@ -54,7 +54,9 @@ function App() {
           <Products img={powder} text={'پودر'} color={'orangered'} />
           <Products img={mascara} text={'ریمل'} color={'#f7b733'} />
         </div>
-        <Countdwn />
+        <div className="countdown">
+          <Countdwn />
+        </div>
       </header>
     </div>
   );
