@@ -1,3 +1,79 @@
+/* import heading from '../../assets/Images/heading_image.png'; */
 .heading{
     margin:3rem auto;
+}
+
+.catgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+.catg{
+    background-color: #000;
+    padding: 1rem;
+    border: none;
+    color: #fff;
+}
+.catg:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.header{
+    text-align: center;
+}
+
+
+
+.shops{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        
+}
+.shop{
+background-repeat: no-repeat;
+background-size: cover;
+width: 24%;
+position: relative;
+background-color: #fff;
+border-radius: 15px;
+
+}
+.shop img{
+    width: 18vw;
+
+}
+.prdoct{
+    position: relative;
+}
+.icns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shw{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: orangered;
+    color: #fff;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.detail h4{
+    color: orangered;
 }

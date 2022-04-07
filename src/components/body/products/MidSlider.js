@@ -31,7 +31,7 @@ export default function () {
     image.caption === caption ? 'caption currentCaption' : 'caption';
 
   return (
-    <div className="slider">
+    <div className="mid-slider">
       <SimpleImageSlider
         width={500}
         height={450}
