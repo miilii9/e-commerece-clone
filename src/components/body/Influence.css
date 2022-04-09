@@ -1,0 +1,81 @@
+/* .header { */
+/*   text-align: center; */
+/*   margin: 1rem auto; */
+/*   background: url(../../../assets/Images/heading_image.png) no-repeat; */
+/*   object-fit: cover; */
+/*   background-position: center; */
+/* } */
+
+/* .header .headingp { */
+/*   font-size: 20px; */
+/*   margin-top: 0.5rem; */
+/*   font-weight: 600; */
+/* } */
+.influencs {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.influenc {
+  width: 28%;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.secondry-img {
+  width: 13%;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.name {
+  position: absolute;
+  top: 16px;
+  left: 60px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: #000;
+}
+.icons-on-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  visibility: collapse;
+  transition: all ease 0.2s;
+}
+.influenc:hover {
+  cursor: pointer;
+}
+.influenc:hover .icons-on-hover {
+  visibility: visible;
+}
+.icons-on-hover .icon {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.ply {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  background-color: rgba(162, 164, 167, 0.493);
+  padding: 0.7rem;
+  color: #fff;
+  border-radius: 50%;
+  border: solid 1px #fff;
+}

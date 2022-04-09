@@ -5,11 +5,11 @@ import './MidSlider.css';
 import { useState } from 'react';
 
 // imgs
-import img1 from '../../../assets/Images/product37_large.jpg';
-import img2 from '../../../assets/Images/dafi-micellar-water-oil-control-200ml-149270041902.jpg';
-import img3 from '../../../assets/Images/comeon-cream-foot-246130141113.jpg';
-import img4 from '../../../assets/Images/bioderma-photoderma-fluid-max-100spf-177143381203_0.jpg';
-import img5 from '../../../assets/Images/bioderma-photoderma-fluid-max-100spf-177143381203_0.jpg';
+import img1 from '../../assets/Images/product37_large.jpg';
+import img2 from '../../assets/Images/dafi-micellar-water-oil-control-200ml-149270041902.jpg';
+import img3 from '../../assets/Images/comeon-cream-foot-246130141113.jpg';
+import img4 from '../../assets/Images/bioderma-photoderma-fluid-max-100spf-177143381203_0.jpg';
+import img5 from '../../assets/Images/bioderma-photoderma-fluid-max-100spf-177143381203_0.jpg';
 
 export default function () {
   const images = [

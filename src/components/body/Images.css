@@ -1,0 +1,15 @@
+.img-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 3rem auto;
+}
+.img-wrapper img{
+    width: 48%;
+    border-radius: 20px;
+}
+.img-wrapper img:hover{
+    cursor: pointer;
+}

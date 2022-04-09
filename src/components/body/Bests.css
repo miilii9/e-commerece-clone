@@ -1,0 +1,40 @@
+.header {
+    text-align: center;
+    margin: 0;
+    padding: 4rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .headingp {
+    font-size: 30px;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+.header>img {
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    z-index: -1;
+}
+
+.header p {
+    font-weight: 500;
+}
+.brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    margin-top: 0.7rem;
+}
+.brands>img{
+    margin-right: 1.5rem;
+    width: 10%;
+    border-radius: 50%;
+    border: solid 1px rgba(87, 86, 86, 0.623);
+}

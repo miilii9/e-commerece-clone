@@ -1,10 +1,10 @@
 import React from 'react';
 import MidSlider from './MidSlider';
 import './Items.css';
-import img1 from '../../../assets/Images/big-s-desk.jpg';
-import img2 from '../../../assets/Images/teser-cinere-desk.jpg';
-import img3 from '../../../assets/Images/teser-cliven-desk.jpg';
-import img4 from '../../../assets/Images/teser-flormar-desk.jpg';
+import img1 from '../../assets/Images/big-s-desk.jpg';
+import img2 from '../../assets/Images/teser-cinere-desk.jpg';
+import img3 from '../../assets/Images/teser-cliven-desk.jpg';
+import img4 from '../../assets/Images/teser-flormar-desk.jpg';
 
 export default function Items() {
   const pics = [

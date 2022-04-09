@@ -9,6 +9,27 @@
   font-family: 'Vazirmatn', sans-serif;
 }
 
+*::-webkit-scrollbar-thumb {
+  width: 0;
+  opacity: 0;
+}
+*::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+*::-webkit-scrollbar-track {
+  width: 0;
+  opacity: 0;
+}
+*::-webkit-scrollbar-track-piece {
+  width: 0;
+  opacity: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -72,4 +93,17 @@ button {
 .countdown {
   margin-top: 3rem;
   margin-bottom: 2rem;
+}
+.specials {
+  /* background: url(assets/Images/img-6.jpg) cover no-repeat center !important; */
+  position: relative;
+  margin-top: 5rem;
+}
+.specials>img{
+  position: absolute;
+  z-index: -1000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
 }

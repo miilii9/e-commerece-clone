@@ -1,7 +1,7 @@
 .pics {
   margin: auto;
   width: 80%;
-  height: 90vh;
+  height: 33rem;
   position: relative;
   display: flex;
 }
@@ -13,7 +13,7 @@
 
 .pic img {
   height: auto;
-  width: 20vw;
+  width: 21rem;
   object-fit: cover;
   border-radius: 1rem;
   aspect-ratio: 4/3;

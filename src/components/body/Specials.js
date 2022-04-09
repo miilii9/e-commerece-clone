@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Online.css';
+import './Specials.css';
 // heading background pic
 import Heading from '../../assets//Export/Site/bk-title.png';
 import prdct17 from '../../assets/Images/product17_large.jpg';
@@ -8,8 +8,12 @@ import prdct18 from '../../assets/Images/product25_ec097757-d4bc-45ea-bf9c-ea40b
 import prdct20 from '../../assets/Images/product20_large.jpg';
 import prdct37 from '../../assets/Images/product37_large.jpg';
 
-export default function Online() {
+export default function Specials() {
   const products = [
+    { url: prdct17, captioon: 'ریمل ضد اب', price: 145000 },
+    { url: prdct18, captioon: 'ریمل ضد اب', price: 145000 },
+    { url: prdct20, captioon: 'ریمل ضد اب', price: 145000 },
+    { url: prdct37, captioon: 'ریمل ضد اب', price: 145000 },
     { url: prdct17, captioon: 'ریمل ضد اب', price: 145000 },
     { url: prdct18, captioon: 'ریمل ضد اب', price: 145000 },
     { url: prdct20, captioon: 'ریمل ضد اب', price: 145000 },
@@ -25,7 +29,7 @@ export default function Online() {
 
   return (
     <div className="wrapper">
-      <div className="online-wrapper center-content">
+      <div className="online-wrapper">
         <div className="header">
           <p>محصولات</p>
           <p className="headingp">فروشگاه اینترنتی فیلین</p>

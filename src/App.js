@@ -11,8 +11,12 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 // body
 import Online from './components/body/Online';
-import Items from './components/body/products/Items';
+import Items from './components/body/Items';
+import Influence from './components/body/Influence';
+import Specials from './components/body/Specials';
+import Images from './components/body/Images';
 // imgs
+import YelwBack from './assets/Images/img-6.jpg';
 import cosmetics from './assets/Export/Catagories/cosmetics.png';
 import lipstick from './assets/Export/Catagories/lipstick.png';
 import lotion from './assets/Export/Catagories/lotion.png';
@@ -28,6 +32,9 @@ import {
   faTwitter,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import News from './components/body/News';
+import Bests from './components/body/Bests';
+import Applications from './components/body/Applications';
 
 library.add(
   fas,
@@ -38,7 +45,9 @@ library.add(
   faInstagram,
   faYoutube
 );
+// let backyelw = {
 
+// }
 function App() {
   return (
     <div className="App">
@@ -62,7 +71,16 @@ function App() {
         </div>
       </header>
       <Items />
-      <Online />
+      <Specials />
+      <div className="specials">
+        <Online />
+        <Influence />
+        <img src={YelwBack} alt="back" />
+      </div>
+      <Images />
+      <News />
+      <Bests />
+      <Applications />
     </div>
   );
 }
